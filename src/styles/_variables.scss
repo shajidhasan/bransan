@@ -1,0 +1,10 @@
+$bg-color: #181d24;
+$bg-color-light: #272b31;
+$fg-color: #eeeeee;
+
+$progress-colors: #0066cc, #ff9a00, #83b271, #e00543, #775ada, #fffdd6;
+$progress-bg-color: $fg-color;
+
+$progress-height: 1.5rem;
+
+$primary-color: nth($progress-colors, 5);
