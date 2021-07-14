@@ -1,6 +1,5 @@
 {
   "version": "0.0.1",
-  "type": "module",
   "name": "bransan",
   "scripts": {
     "dev": "vite",
