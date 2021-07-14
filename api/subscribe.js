@@ -1,5 +1,6 @@
-const admin = require("firebase-admin");
-const { v4: uuid } = require('uuid');
+import admin from "firebase-admin";
+import { v4 as uuid } from 'uuid';
+
 const firebase = admin.initializeApp(
     {
         credential: admin.credential.cert({

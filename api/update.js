@@ -1,7 +1,7 @@
-const fetch = require('node-fetch');
-const DOMParser = require('dom-parser');
-const admin = require("firebase-admin");
-const { v4: uuid } = require('uuid');
+import fetch from 'node-fetch';
+import DOMParser from 'dom-parser';
+import admin from "firebase-admin";
+import { v4 as uuid } from 'uuid';
 
 const firebase = admin.initializeApp({
     credential: admin.credential.cert({
