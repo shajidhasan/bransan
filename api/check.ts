@@ -2,6 +2,7 @@ import fetch from 'node-fetch';
 import DOMParser from 'dom-parser';
 import admin from "firebase-admin";
 import { v4 as uuid } from 'uuid';
+import { VercelRequest, VercelResponse } from '@vercel/node';
 
 // import dotenv from 'dotenv';
 // dotenv.config();
@@ -52,7 +53,7 @@ const getProgressData = async function () {
         })
         .then((html) => {
             let parser = new DOMParser();
-            let doc = parser.parseFromString(html, "text/html");
+            let doc = parser.parseFromString(html);
             let labels = doc.getElementsByClassName("vc_label");
 
             for (let i = 0; i < labels.length; i++) {
@@ -131,6 +132,8 @@ const checkDataAndUpdate = async function (req, res) {
     });
 }
 
-export default async function (req, res) {
+export default async function (req: VercelRequest, res: VercelResponse) {
     await checkDataAndUpdate(req, res);
 }
+
+// checkDataAndUpdate(null, null);

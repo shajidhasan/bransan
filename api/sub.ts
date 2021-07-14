@@ -1,5 +1,6 @@
 import admin from "firebase-admin";
 import { v4 as uuid } from 'uuid';
+import { VercelRequest, VercelResponse } from '@vercel/node';
 
 const firebase = admin.initializeApp(
     {
@@ -14,7 +15,7 @@ const firebase = admin.initializeApp(
 
 const messaging = firebase.messaging();
 
-export default async function (req, res) {
+export default async function (req: VercelRequest, res: VercelResponse) {
     console.log('Found token:', req.body.token);
     await messaging.subscribeToTopic(req.body.token, 'bransanupdate').then((res) => { console.log("Done:", res) })
         .catch((err) => { console.log("Error:", err) });;
