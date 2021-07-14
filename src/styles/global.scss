@@ -6,10 +6,12 @@
 
 body {
     font-family: "Krub", sans-serif;
-    background: url("../assets/background.svg");
+    background: url(../assets/background2.svg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     background-color: $bg-color;
-    background-position: center;
-    background-repeat: repeat;
 }
 
 * {
