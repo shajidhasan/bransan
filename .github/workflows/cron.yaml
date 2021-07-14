@@ -12,4 +12,4 @@ jobs:
       - name: Update
         run: |
           curl --request GET \
-          --url 'https://bransan.vercel.app/api/update'
+          --url 'https://bransan.vercel.app/api/check'

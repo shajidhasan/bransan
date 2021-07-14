@@ -16,7 +16,7 @@
             })
             .then((token) => {
                 console.log(token);
-                fetch("https://bransan.vercel.app/api/subscribe", {
+                fetch("https://bransan.vercel.app/api/sub", {
                     method: "POST",
                     headers: {
                         Accept: "application/json",
