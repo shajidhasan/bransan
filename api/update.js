@@ -3,6 +3,9 @@ import DOMParser from 'dom-parser';
 import admin from "firebase-admin";
 import { v4 as uuid } from 'uuid';
 
+// import dotenv from 'dotenv';
+// dotenv.config();
+
 const firebase = admin.initializeApp({
     credential: admin.credential.cert({
         projectId: process.env.FIREBASE_PROJECT_ID,
@@ -128,6 +131,6 @@ const checkDataAndUpdate = async function (req, res) {
     });
 }
 
-module.exports = async (req, res) => {
+export default async function (req, res) {
     await checkDataAndUpdate(req, res);
 }
