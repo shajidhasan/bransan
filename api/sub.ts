@@ -15,6 +15,7 @@ const firebase = admin.initializeApp(
 const messaging = firebase.messaging();
 
 export default async function (req, res) {
+    console.log("hey there!");
     console.log('Found token:', req.body.token);
     await messaging.subscribeToTopic(req.body.token, 'bransanupdate').then((res) => { console.log("Done:", res) })
         .catch((err) => { console.log("Error:", err) });;

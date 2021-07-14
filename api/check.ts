@@ -6,8 +6,6 @@ import { v4 as uuid } from 'uuid';
 // import dotenv from 'dotenv';
 // dotenv.config();
 
-console.log(process.env.FIREBASE_ADMIN_KEY.slice(0, 100));
-
 const firebase = admin.initializeApp({
     credential: admin.credential.cert({
         projectId: process.env.FIREBASE_PROJECT_ID,
