@@ -2,7 +2,6 @@ import fetch from 'node-fetch';
 import DOMParser from 'dom-parser';
 import admin from "firebase-admin";
 import { v4 as uuid } from 'uuid';
-import { VercelRequest, VercelResponse } from '@vercel/node';
 
 // import dotenv from 'dotenv';
 // dotenv.config();
@@ -132,7 +131,7 @@ const checkDataAndUpdate = async function (req, res) {
     });
 }
 
-export default async function (req: VercelRequest, res: VercelResponse) {
+export default async function (req, res) {
     await checkDataAndUpdate(req, res);
 }
 

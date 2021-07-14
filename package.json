@@ -25,8 +25,6 @@
     "vite": "^2.4.2"
   },
   "dependencies": {
-    "@now/build-utils": "^2.7.0",
-    "@vercel/node": "^1.11.1",
     "chart.js": "^3.4.1",
     "chartjs-adapter-luxon": "^1.0.0",
     "dom-parser": "^0.1.6",
