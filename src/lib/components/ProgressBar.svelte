@@ -52,13 +52,18 @@
       font-size: 1.1rem;
       font-weight: 500;
       cursor: pointer;
+      @media (max-width: 500px) {
+        font-size: 0.9rem;
+      }
     }
 
     > .progress-bar {
       width: 100%;
       background-color: $progress-bg-color;
       height: $progress-height;
-
+      @media (max-width: 500px) {
+        height: $progress-height * 0.8;
+      }
       > .progress-filled {
         background: var(--color);
         background: linear-gradient(90deg, var(--light) 0%, var(--dark) 100%);
@@ -75,6 +80,9 @@
           margin-right: 0.2rem;
           color: $fg-color;
           font-weight: 500;
+          @media (max-width: 500px) {
+            font-size: 0.8rem;
+          }
         }
       }
     }
