@@ -34,6 +34,9 @@
       placeholder="High Imperial translation will appear here"
       spellcheck="false"
     />
+    <div class="credit">
+      Credit: <a href="https://github.com/richardkopelow/HighImperialTranslator" target="_blank">richardkopelow</a>
+    </div>
   </Card>
 </div>
 
@@ -51,7 +54,6 @@
   textarea:focus {
     outline: 2px solid $primary-color;
   }
-
   button {
     margin: 0.8rem 0;
     padding: 0.2rem 1rem;
@@ -63,11 +65,20 @@
     background-color: $primary-color;
     border: none;
     transition: all 200ms ease-in;
+    cursor: pointer;
   }
   button:hover {
     background-color: lighten($primary-color, 10%);
   }
   button:active {
     transform: translateY(4px);
+  }
+  .credit {
+    margin-top: 1rem;
+    color: $fg-color;
+    a {
+      color: $primary-color;
+      text-decoration: none;
+    }
   }
 </style>
