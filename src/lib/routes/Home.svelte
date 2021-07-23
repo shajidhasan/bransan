@@ -51,6 +51,7 @@
 <div class="page">
   {#if !loading}
     <Card>
+      <a href="#/high-imperial">English to High Imperial</a>
       <ProgressContainer>
         {#each progresses as progress, n}
           <ProgressBar
@@ -63,7 +64,9 @@
         {/each}
       </ProgressContainer>
       <p class="last-checked">Last checked: {lastChecked}</p>
-      <BottomButtons />
+      <div class="mt">
+        <BottomButtons />
+      </div>
     </Card>
   {:else}
     <Loading />
@@ -75,5 +78,19 @@
     font-weight: 500;
     color: rgba($fg-color, 0.8);
     font-size: 0.9rem;
+  }
+  .mt {
+    margin-top: 1.1rem;
+  }
+  a {
+    position: absolute;
+    bottom: -2rem;
+    right: 0;
+    background-color: $primary-color;
+    color: $fg-color;
+    font-weight: 600;
+    padding: 0.3rem 1rem;
+    text-decoration: none;
+    display: none;
   }
 </style>

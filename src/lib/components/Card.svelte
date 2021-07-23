@@ -13,26 +13,26 @@
 <style lang="scss">
   div {
     background-color: $bg-color-light;
-    padding: 2rem;
+    padding: 1.5rem;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.2rem;
+    position: relative;
     @media (min-width: 500px) {
-      padding: 2.5rem;
+      padding: 2rem;
       width: 70%;
     }
     @media (min-width: 500px) {
-      padding: 2.5rem;
+      padding: 2rem;
       width: 70%;
     }
     @media (min-width: 1200px) {
-      padding: 3rem;
+      padding: 2.5rem;
       width: 60%;
     }
     @media (min-width: 1500px) {
-      padding: 4rem;
+      padding: 3rem;
       width: 900px;
     }
   }

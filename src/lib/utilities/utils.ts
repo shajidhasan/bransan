@@ -1,12 +1,6 @@
-export const colors = [
-  "#0066cc",
-  "#775ada",
-  "#e00543",
-  "#01937C",
-  "#ff9a00",
-];
+export const colors = ["#0066cc", "#775ada", "#e00543", "#01937C", "#ff9a00"];
 
-const getRandomColor = ():string => {
+const getRandomColor = (): string => {
   return colors[Math.floor(Math.random() * colors.length)];
 };
 

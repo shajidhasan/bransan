@@ -2,7 +2,7 @@
   import ProgressChart from "../components/ProgressChart.svelte";
   import Loading from "../components/Loading.svelte";
   import { progressData } from "../stores";
-  import { processData } from "../utilities";
+  import { processData } from "../utilities/utils";
   import { db } from "../firebase";
 
   export let params: { title: string };

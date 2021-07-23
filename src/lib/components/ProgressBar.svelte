@@ -3,7 +3,7 @@
   import { tweened } from "svelte/motion";
   import { cubicOut } from "svelte/easing";
   import tinycolor from "tinycolor2";
-  import { colors } from "../utilities";
+  import { colors } from "../utilities/utils";
 
   export let progress: Progress, n: number;
   const dispatch = createEventDispatcher();
@@ -86,5 +86,6 @@
         }
       }
     }
+    margin-bottom: 1.2rem;
   }
 </style>

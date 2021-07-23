@@ -71,9 +71,9 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        gap: 0.3rem;
     }
     .dot {
+        margin: 0 0.4rem;
         height: 5px;
         width: 5px;
         background-color: rgba($fg-color, 0.5);

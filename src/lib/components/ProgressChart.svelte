@@ -90,7 +90,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.2rem;
 
     @media (min-width: 500px) {
       height: 80%;

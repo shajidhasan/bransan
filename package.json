@@ -25,6 +25,7 @@
     "vite": "^2.4.2"
   },
   "dependencies": {
+    "@shajid/nlp_compromise": "^6.5.0",
     "chart.js": "^3.4.1",
     "chartjs-adapter-luxon": "^1.0.0",
     "dom-parser": "^0.1.6",
