@@ -7,11 +7,14 @@
 
   const onTranslate = (): void => {
     let sentences = english.match(/[^\.!\?]+[\.!\?]+/g);
+    if (sentences === null) {
+      sentences = [english];
+    }
     let translated = [];
     for (let sentence of sentences) {
       translated.push(translate(sentence).replace(/  +/g, " "));
     }
-    highImperial = translated.join(' ');
+    highImperial = translated.join(" ");
   };
 </script>
 
@@ -35,7 +38,10 @@
       spellcheck="false"
     />
     <div class="credit">
-      Credit: <a href="https://github.com/richardkopelow/HighImperialTranslator" target="_blank">richardkopelow</a>
+      Credit: <a
+        href="https://github.com/richardkopelow/HighImperialTranslator"
+        target="_blank">richardkopelow</a
+      >
     </div>
   </Card>
 </div>
